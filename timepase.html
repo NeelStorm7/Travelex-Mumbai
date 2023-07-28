@@ -1,0 +1,250 @@
+<html>
+<head>
+<title> Home-Mumbai </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+   <style>
+   header {
+text-align:center;
+font-size:40px;
+}
+header {
+  height: 400;
+  background-image: linear-gradient(black, #0066cc);
+  width:100%;
+}
+#c1{
+background:#f2f2f2;
+background-repeat:no-repeat;background-image:linear-gradient(to bottom,#0b1b29 -60%,#554176);
+background-size:100% 454px;
+min-height:100vh
+}
+nav ul{
+list-style-type:none;
+padding:15px;
+font-size:40;
+}
+nav ul li{
+display:inline;
+padding:20px;
+}
+#rcorners1 {
+  border-radius: 25px;
+  background: white;
+  padding: 20px; 
+  width: 600;
+  height: 100; 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.c2{
+color:black;
+text-decoration:none;
+padding-left:12	;
+padding-right:12;
+padding-bottom:5;
+padding-top:2;
+font-size:25;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+#rcorners2 {
+  border-radius: 25px;
+  padding: 20px; 
+  width: 98%;
+  height: 500;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color:white;
+  
+}
+
+th{
+text-align:center;
+font-size:50px;
+padding-left:390;
+color:white;
+}
+.c3{
+color:white;
+text-align:center;
+}
+#rcorners3 {
+  border-radius: 25px;
+  padding: 20px; 
+  width: 390;
+  height: 425;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+background-image: linear-gradient(black, #0066cc);
+}
+.input_field{
+  margin-bottom: 10px;
+  padding-bottom:15;
+}
+.input_field input[type="text"],
+textarea{
+  border: 1px solid #e0e0e0;
+  width: 92%;
+  padding: 10px;
+}
+#error_message{
+  margin-bottom: 20px;
+  background: #fe8b8e;
+  padding: 0px;
+  text-align: center;x-fast
+  font-size: 14px;
+  transition: all 0.5s ease;
+}
+input[type=submit]{
+background-color:background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0, 0.4);
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.c15{
+background-color:background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0, 0.4);
+  color:white;
+  }
+</style>
+<script>
+function validate(){
+var name=document.getElementById("name").value;
+var phone=document.getElementById("phone").value;
+var email=document.getElementById("email").value;
+var message=document.getElementById("message").value;
+var error_message=document.getElementById("error_message");
+var text;
+if (name.length<3){
+text="please enter a valid name";
+error_message.innerHTML=text;
+return false;
+}
+if (isNaN(phone) || phone.length<9){
+text="please enter a valid phone number";
+error_message.innerHTML=text;
+return false;
+}
+   if(email.indexOf("@") == -1 || email.length < 6){
+    text = "Please Enter valid Email";
+    error_message.innerHTML = text;
+    return false;
+  }
+  if (message.length<22){
+text="please enter a valid message";
+error_message.innerHTML=text;
+return false;
+}
+}
+</script>
+</head>
+<body>
+<header>
+<table>
+<tr>
+<td><img src="image.png" height='150' width='150' style="float:left;" /></a></td>
+<th>Travelex Mumbai</th>
+</tr>
+</table>
+
+<nav>
+<div id="rcorners1">
+<table text align="center">
+<tr>
+<td>
+<a href="index.html"><img src="img7.png" height=45 width=45, class="c2"></a>
+</td>
+<td>
+<a href="Flights.html"><img src="flight2.jpg"height=45 width=45, class="c2"></a>
+</td>
+<td>
+<a href="Hotels.html"><img src="hotel.png"height=50 width=50, class="c2"></a>
+</td>
+<td>
+<a href="Restaurants.html"><img src="restaurant3.png"height=50 width=50, class="c2"></a>
+</td>
+<td>
+<a href="Contact-us.html"><img src="telephone2.avif"height=45 width=45, class="c2"></a>
+</td>
+</tr>
+<tr>
+<td>
+<a href="index.html", class="c2"> Home </a>
+</td>
+<td>
+<a href="Flights.html", class="c2"> Flights </a> 
+</td>
+<td>
+<a href="Hotels.html", class="c2"> Hotels </a>
+</td>
+<td>
+<a href="Restaurants.html", class="c2"> Restaurants </a>
+</td>
+<td>
+<a href="Contact-us.html", class="c2"> Contact Us </a>
+</td>
+</tr>
+</table>
+
+
+
+
+
+</div>
+</nav>
+<div id="grad1"></div>
+<br>
+<div id="rcorners2"></div>
+</header>
+
+<div id="rcorners3"> 
+<h1 class="c3"> Review </h1>
+<div id="error_message">
+     
+  </div>
+<form method="get" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScKerfhJu-is3tw9Dzdj6IaArjVWvYTHQbo9Yw7oLjzHc9sgw/formResponse"  id="myform" onsubmit = "return validate();", align=center>
+    <div class="input_field">
+	
+        <input name="entry.1360311069"type="text" placeholder="Name" id="name" class="c15">
+    </div>
+  
+    <div class="input_field">
+        <input name="entry.1851353054"type="text" placeholder="Phone" id="phone" class="c15">
+    </div>
+    <div class="input_field">
+        <input name="entry.2118598958"type="text" placeholder="Email" id="email" class="c15">
+    </div>
+    <div class="input_field">
+        <textarea name="entry.1982807417"placeholder="Message" id="message" class="c15"></textarea>
+    </div>
+    <div class="btn">
+        <input type="submit">
+    </div>
+  </form>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
